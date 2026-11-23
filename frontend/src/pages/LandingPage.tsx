@@ -665,7 +665,7 @@ export default function LandingPage() {
             <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4 }}>
               <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#131D17]/90 backdrop-blur-sm border border-[#1F2E25] mb-4">
                 <span className="w-2 h-2 rounded-full bg-[#70E0A0] animate-pulse shadow-[0_0_8px_#70E0A0]" />
-                <span className="text-xs text-[#A3FFD0] font-mono tracking-wide">✨ SMART PERSONAL FINANCE & SUBSCRIPTION TRACKER</span>
+                <span className="text-xs text-[#A3FFD0] font-mono tracking-wide"> SMART PERSONAL FINANCE & SUBSCRIPTION TRACKER</span>
               </div>
 
               <h1 className="text-4xl sm:text-6xl font-extrabold text-[#F1F5F2] font-heading leading-[1.08] tracking-tight">
@@ -872,7 +872,7 @@ export default function LandingPage() {
                 Smart AI Finance Helper
               </p>
               <h2 className="text-3xl sm:text-4xl font-bold text-[#F1F5F2] font-heading tracking-tight">
-                Ask questions in plain English. Get instant answers.
+                Ask questions . Get instant answers.
               </h2>
               <p className="text-sm text-[#89978F] max-w-xl mt-2 font-normal leading-relaxed">
                 FINORA connects directly to your local expenses and subscriptions so you can ask real questions and get clear, honest insights without doing manual math.

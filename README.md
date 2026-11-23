@@ -19,10 +19,62 @@
 
 ---
 
+## 📸 Visual Showcase & Screenshots
+
+### 1. Futuristic 3D Landing Page & Currency Core
+*Interactive 3D WebGL currency medallion with orbiting currency rings, real-time mouse parallax, and live feature telemetry.*
+
+![Finora Landing Page](./screenshots/01-landing-hero.png)
+
+---
+
+### 2. Live Financial Overview & Command Center
+*Real-time dashboard displaying total net worth, inflow vs. outflow velocity bars, category donut allocation, and upcoming renewals radar.*
+
+![Finora Dashboard Overview](./screenshots/02-dashboard-overview.png)
+
+---
+
+### 3. Outflow & Transactions Ledger
+*Categorized transaction history with instant search, inflow/outflow filters, and real-time outflow documentation.*
+
+![Transactions Ledger](./screenshots/03-expenses-tracker.png)
+
+---
+
+### 4. Recurring Subscriptions Portfolio & Burn Rate
+*Audit active infrastructure seats, SaaS subscriptions, renewal countdown timelines, and monthly burn rate metrics.*
+
+![Subscriptions Manager](./screenshots/04-subscriptions-manager.png)
+
+---
+
+### 5. Smart Category Budgets & Savings Ceilings
+*Proactive capital ceiling matrix with visual threshold headroom meters, emergency fund progress, and health alerts.*
+
+![Budgets & Goals](./screenshots/05-budgets-and-goals.png)
+
+---
+
+### 6. Deep Financial Trends & Analytics
+*6-month expenditure velocity curve, categorical capital allocation breakdown, and smart anomaly alerts.*
+
+![Financial Trends & Analytics](./screenshots/06-analytics.png)
+
+---
+
+### 7. In-App AI Financial Assistant
+*Intelligent conversational assistant loaded with live ledger context to answer questions on burn rate, upcoming bills, and category trends in plain English.*
+
+![AI Financial Assistant](./screenshots/07-ai-assistant.png)
+
+---
+
 ##  Architecture & Project Structure
 
 ```text
 Finora-Personal-Finance-Tracker/
+├── screenshots/                  # High-resolution application preview captures
 ├── frontend/                     # Modern React + Vite + Three.js application
 │   ├── src/
 │   │   ├── components/           # UI elements, spatial cards, navigation & charts

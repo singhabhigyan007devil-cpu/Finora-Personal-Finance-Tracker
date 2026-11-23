@@ -44,11 +44,11 @@ Finora-Personal-Finance-Tracker/
 
 ---
 
-## 🚀 How to Run the Web Application
+##  How to Run the Web Application
 
 Follow these step-by-step instructions to get the Finora web application up and running on your local machine.
 
-### 📋 Prerequisites
+###  Prerequisites
 
 Before starting, ensure your system meets the following requirements:
 
@@ -64,7 +64,7 @@ Before starting, ensure your system meets the following requirements:
 
 ---
 
-### ⚡ Quick Start (Step-by-Step)
+###  Quick Start (Step-by-Step)
 
 #### Step 1: Open Terminal & Navigate to Project
 Open your preferred terminal (PowerShell, Command Prompt, Bash, or VS Code integrated terminal) and navigate to the project directory:
@@ -101,13 +101,13 @@ Once launched, you will see a console output similar to:
 
 #### Step 4: Open in Your Browser
 Click or navigate to:
-👉 **[http://localhost:5173](http://localhost:5173)**
+**[http://localhost:5173](http://localhost:5173)**
 
 The application will load with the interactive 3D WebGL currency core, responsive dashboard metrics, smart budgets, and live subscription trackers.
 
 ---
 
-### 📦 Production Build & Preview
+###  Production Build & Preview
 
 To test or deploy the optimized production bundle:
 
@@ -122,7 +122,7 @@ The preview server will run at `http://localhost:4173/` by default.
 
 ---
 
-### 📜 Available Web Scripts
+###  Available Web Scripts
 
 Run these scripts from inside the `frontend/` directory:
 
@@ -135,7 +135,7 @@ Run these scripts from inside the `frontend/` directory:
 
 ---
 
-### 🔧 Troubleshooting & FAQs
+###  Troubleshooting & FAQs
 
 - **Port `5173` is already in use:**
   If another process is using port 5173, specify an alternate port:
@@ -161,7 +161,7 @@ Run these scripts from inside the `frontend/` directory:
 
 ---
 
-## 🤖 Running the MCP Server (Optional Backend)
+##  Running the MCP Server (Optional Backend)
 
 If you wish to run the standalone Model Context Protocol (MCP) server alongside the web app for AI agent integration (Claude Desktop, Cursor, etc.):
 

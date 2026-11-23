@@ -4,7 +4,7 @@
 
 ---
 
-## 🌟 Features
+##  Features
 
 - **Cinematic 3D WebGL Background**: Continuous real-time 3D rendered financial core featuring an interactive minted currency medallion (`₹` & `$`) and orbiting world coins (`€`, `£`, `₿`, `¥`) with smooth mouse parallax and scroll tracking.
 - **Neo-Fintech Design System**: Emerald holographic accents (`#70E0A0`), deep space background (`#070B09`), Space Grotesk / Inter typography, and layered spatial panels.
@@ -19,7 +19,7 @@
 
 ---
 
-## 🏗️ Architecture & Project Structure
+##  Architecture & Project Structure
 
 ```text
 Finora-Personal-Finance-Tracker/
@@ -44,7 +44,7 @@ Finora-Personal-Finance-Tracker/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Frontend Setup
 
@@ -83,7 +83,7 @@ npm start
 
 ---
 
-## 🤖 MCP Server Tools
+##  MCP Server Tools
 
 The MCP backend exposes 7 formal tools:
 
@@ -99,7 +99,7 @@ The MCP backend exposes 7 formal tools:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend**: React 18, Vite, Three.js, Lucide Icons, Zustand, TailwindCSS styling
 - **Backend / MCP**: Node.js, TypeScript, `@modelcontextprotocol/sdk`
@@ -107,6 +107,6 @@ The MCP backend exposes 7 formal tools:
 
 ---
 
-## 📄 License
+##  License
 
-MIT License. Designed and built with ❤️ by Abhigyan Singh.
+MIT License.

@@ -44,40 +44,136 @@ Finora-Personal-Finance-Tracker/
 
 ---
 
-##  Getting Started
+## 🚀 How to Run the Web Application
 
-### 1. Frontend Setup
+Follow these step-by-step instructions to get the Finora web application up and running on your local machine.
 
-Ensure you have **Node.js (v18+)** installed.
+### 📋 Prerequisites
+
+Before starting, ensure your system meets the following requirements:
+
+- **Node.js**: Version **18.0.0 or higher** (Node.js 20+ LTS recommended). Check with:
+  ```bash
+  node -v
+  ```
+- **Package Manager**: **npm** (comes with Node.js), **pnpm**, or **yarn**. Check with:
+  ```bash
+  npm -v
+  ```
+- **Modern Web Browser**: Chrome, Edge, Firefox, Brave, or Safari with **WebGL 2.0 / Hardware Acceleration** enabled to render the cinematic 3D currency core.
+
+---
+
+### ⚡ Quick Start (Step-by-Step)
+
+#### Step 1: Open Terminal & Navigate to Project
+Open your preferred terminal (PowerShell, Command Prompt, Bash, or VS Code integrated terminal) and navigate to the project directory:
 
 ```bash
-# Navigate to frontend directory
+# From the project root, navigate into the frontend folder
 cd frontend
+```
 
-# Install dependencies
+#### Step 2: Install Dependencies
+Install all required Node dependencies (React 19, Three.js, Lucide, TailwindCSS, Zustand, Framer Motion, etc.):
+
+```bash
 npm install
+```
+> **Tip:** If you encounter any dependency conflict warnings, you can also use `npm install --legacy-peer-deps`.
 
-# Start development server
+#### Step 3: Launch the Development Server
+Start the local Vite development server with Hot Module Replacement (HMR):
+
+```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Once launched, you will see a console output similar to:
 
-### 2. Backend MCP Server Setup
+```text
+  VITE v8.3.6  ready in 320 ms
 
-The standalone MCP server enables AI agents (Claude Desktop, Cursor, etc.) to query Finora's financial engine over standard I/O (`stdio`).
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: use --host to expose
+  ➜  press h + enter to show help
+```
+
+#### Step 4: Open in Your Browser
+Click or navigate to:
+👉 **[http://localhost:5173](http://localhost:5173)**
+
+The application will load with the interactive 3D WebGL currency core, responsive dashboard metrics, smart budgets, and live subscription trackers.
+
+---
+
+### 📦 Production Build & Preview
+
+To test or deploy the optimized production bundle:
 
 ```bash
-# Navigate to mcp-server directory
-cd mcp-server
-
-# Install dependencies
-npm install
-
-# Build TypeScript to JavaScript
+# 1. Typecheck and build the production bundle
 npm run build
 
-# Start the MCP server
+# 2. Preview the built application locally
+npm run preview
+```
+The preview server will run at `http://localhost:4173/` by default.
+
+---
+
+### 📜 Available Web Scripts
+
+Run these scripts from inside the `frontend/` directory:
+
+| Command | Description |
+| :--- | :--- |
+| `npm run dev` | Starts the local development server at `http://localhost:5173` with instant HMR. |
+| `npm run build` | Compiles TypeScript and creates an optimized production build in `dist/`. |
+| `npm run preview` | Spins up a local static server to preview the `dist/` production build. |
+| `npm run lint` | Runs ultra-fast Oxlint checks across the codebase. |
+
+---
+
+### 🔧 Troubleshooting & FAQs
+
+- **Port `5173` is already in use:**
+  If another process is using port 5173, specify an alternate port:
+  ```bash
+  npm run dev -- --port 3000
+  ```
+  Or allow Vite to automatically switch to the next open port.
+
+- **3D Canvas appears blank or lagging:**
+  Ensure hardware acceleration is enabled in your browser:
+  - **Chrome / Edge / Brave**: Settings → System → Enable *"Use graphics acceleration when available"*.
+  - Verify your GPU driver is up to date and WebGL is active via [get.webgl.org](https://get.webgl.org/).
+
+- **Corrupted dependencies or install issues:**
+  Clear cache and reinstall cleanly:
+  ```bash
+  # Windows PowerShell
+  Remove-Item -Recurse -Force node_modules, package-lock.json; npm install
+
+  # macOS / Linux
+  rm -rf node_modules package-lock.json && npm install
+  ```
+
+---
+
+## 🤖 Running the MCP Server (Optional Backend)
+
+If you wish to run the standalone Model Context Protocol (MCP) server alongside the web app for AI agent integration (Claude Desktop, Cursor, etc.):
+
+```bash
+# In a separate terminal tab, navigate to the MCP server
+cd mcp-server
+
+# Install dependencies & build
+npm install
+npm run build
+
+# Start the MCP server over stdio
 npm start
 ```
 

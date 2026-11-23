@@ -1,32 +1,46 @@
-# React + TypeScript + Vite
+# Finora — Web Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Neo-fintech personal finance command center built with React 19, TypeScript, Three.js, TailwindCSS, and Vite.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Running the Web Application
 
-## React Compiler
+### Prerequisites
+- **Node.js**: v18.0.0+ (v20+ recommended)
+- **npm** (or `pnpm` / `yarn`)
+- Browser with **WebGL 2.0 / Hardware Acceleration** enabled (Chrome, Edge, Brave, Firefox, Safari)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Step-by-Step Setup
 
-## Expanding the Oxlint configuration
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+2. **Start Local Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+3. **Open in Browser**:
+   Navigate to **[http://localhost:5173](http://localhost:5173)**
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+---
+
+## 📜 Available Scripts
+
+- `npm run dev`: Launch development server with Hot Module Replacement (HMR).
+- `npm run build`: Compile TypeScript and build for production into `dist/`.
+- `npm run preview`: Locally preview the production build at `http://localhost:4173`.
+- `npm run lint`: Run Oxlint checks.
+
+---
+
+## 🔧 Troubleshooting
+
+- **Port in use**: Run on another port:
+  ```bash
+  npm run dev -- --port 3000
+  ```
+- **3D Canvas not rendering**: Verify WebGL & Hardware Acceleration is turned ON in browser settings (`chrome://settings/system`).
